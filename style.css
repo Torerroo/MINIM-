@@ -1,9 +1,11 @@
-.body { 
+.body {
+    margin: 0;
+}
+.head { 
     max-width: 1065px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
-    height: 300vh;
 }
 .header {
     display: grid;
@@ -41,7 +43,6 @@
     color: rgb(180, 173, 158);
     text-transform: uppercase;
     font-weight: 400;
-    margi
 }
 .specfont2 {
     font-size: 30px;
@@ -63,4 +64,8 @@
 
 .middle__column1 {
     padding-right: 60px;
+}
+#sign {
+    margin-top: 120px;
+    border: 200px solid rgb(240, 240, 240);
 }
