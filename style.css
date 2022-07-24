@@ -79,7 +79,8 @@
 }
 .form__line {
     background-color: rgb(240, 240, 240);
-    text-align: center;    
+    text-align: center; 
+      
 
     
 }
@@ -93,9 +94,15 @@
     font-family: "Playfair Display";
     outline: 0;
     padding-bottom: 10px;
-}
-.form__icon {
     
 }
+.form__button {
+    position: relative;
+    font-size: 35px;
+    border: none;
+    top: -45px;
+    left: 190px;
+}
+
     
 
