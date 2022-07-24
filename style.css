@@ -65,7 +65,37 @@
 .middle__column1 {
     padding-right: 60px;
 }
-#sign {
+.form {
     margin-top: 120px;
-    border: 200px solid rgb(240, 240, 240);
+    border: 100px solid rgb(240, 240, 240);
+    font-family: "Playfair Display";
 }
+.form__title {
+    text-align: center;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+    font-weight: 400;
+    padding-bottom: 42px;
+}
+.form__line {
+    background-color: rgb(240, 240, 240);
+    text-align: center;    
+
+    
+}
+.form__input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(240, 240, 240);
+    width: 400px;
+    text-align: left;
+    padding-top: 41px;
+    font-family: "Playfair Display";
+    outline: 0;
+    padding-bottom: 10px;
+}
+.form__icon {
+    
+}
+    
+
