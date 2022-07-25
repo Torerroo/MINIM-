@@ -15,7 +15,7 @@
     .header__item {
         text-transform: uppercase;
         font-size: 14px;
-}
+    }
     .minimø {
         margin-bottom: 75px;
         font-size: 30px;
@@ -51,12 +51,14 @@
     font-weight: 400;
     margin-bottom: 35px; 
 }
-.middle {
-    margin-top: 135px;
+#container {
     max-width: 892px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+}
+.middle {
+    margin-top: 135px;
 }
 #middle__image {
     margin-bottom: 30px;
@@ -65,44 +67,53 @@
 .middle__column1 {
     padding-right: 60px;
 }
+#column__text {
+    margin-bottom: 132px;
+}
 .form {
     margin-top: 120px;
     border: 100px solid rgb(240, 240, 240);
     font-family: "Playfair Display";
 }
-.form__title {
-    text-align: center;
-    margin: 0;
-    background-color: rgb(240, 240, 240);
-    font-weight: 400;
-    padding-bottom: 42px;
+    .form__title {
+        text-align: center;
+        margin: 0;
+        background-color: rgb(240, 240, 240);
+        font-weight: 400;
+        padding-bottom: 42px;
+    }
+    .form__line {
+        background-color: rgb(240, 240, 240);
+        text-align: center; 
+    }
+    .form__input {
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: rgb(240, 240, 240);
+        width: 400px;
+        text-align: left;
+        padding-top: 41px;
+        font-family: "Playfair Display";
+        outline: 0;
+        padding-bottom: 10px;
+    }
+    .form__button {
+        position: relative;
+        font-size: 35px;
+        border: none;
+        top: -45px;
+        left: 190px;
+    }
+.footer {
+    margin: 103px 0 165px 0;
+    
 }
-.form__line {
-    background-color: rgb(240, 240, 240);
-    text-align: center; 
-      
+    .footer__column1 {
+        padding: 0;
+        padding-right: 60px;      
+    }
+    .footer__column2 {
+        padding: 0;
+    }
 
-    
-}
-.form__input {
-    border: none;
-    border-bottom: 1px solid black;
-    background-color: rgb(240, 240, 240);
-    width: 400px;
-    text-align: left;
-    padding-top: 41px;
-    font-family: "Playfair Display";
-    outline: 0;
-    padding-bottom: 10px;
-    
-}
-.form__button {
-    position: relative;
-    font-size: 35px;
-    border: none;
-    top: -45px;
-    left: 190px;
-}
-
-    
 
