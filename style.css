@@ -14,12 +14,15 @@
 }
     .header__item {
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 14px;        
     }
     .minimø {
         margin-bottom: 75px;
         font-size: 30px;
         letter-spacing: 6px;  
+    }
+    .lifestyle, .photodiary, .music, .travel {
+        padding-top: 10px;
     }
     .header__Image {
         grid-row: 2;
@@ -115,5 +118,23 @@
     .footer__column2 {
         padding: 0;
     }
+.footer__button {
+    text-align: center;
+        }
+    .button {
+        font-size: 20px;
+        font-family: "Playfair Display";
+        padding: 25px 35px 25px 35px;
+        border-color: rgb(179, 175, 175);
+        color: rgb(98, 98, 98);
+        background-color: white;
+        margin-bottom: 500px;
+        border: 1px solid rgb(98, 98, 98);      
+    }
+    button:hover {
+        cursor: pointer;
+    }
 
 
+  
+      
