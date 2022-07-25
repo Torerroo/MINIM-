@@ -128,13 +128,35 @@
         border-color: rgb(179, 175, 175);
         color: rgb(98, 98, 98);
         background-color: white;
-        margin-bottom: 500px;
+        margin-bottom: 1370px;
         border: 1px solid rgb(98, 98, 98);      
     }
     button:hover {
         cursor: pointer;
     }
+.bottom {
+    border: 50px solid rgb(240, 240, 240);
+    display: grid;
+    grid-template-areas: "block1 block2 block3 block4 block5 block6";
+    background-color:rgb(240, 240, 240);
+    grid-template-columns: 500px 1200px;
+    font-family: "Playfair Display";   
+}
+    .bottom__block1 {
+        text-align: right;
+        padding-right: 20px;
+    }
+    .bottom__block3 {
+        text-align: right;
+    }
+    .bottom__block4 {
+        text-align: right;
+    }
+    .bottom__block5 {
+        text-align: center;      
+    }
+    
 
 
-  
+      
       
