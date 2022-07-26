@@ -2,20 +2,24 @@ body {
     margin: 0;
 }
 .header {
-    max-width: 1065px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 70px;
+    padding: 0px 15px;
+
 }
     .header__container {
         display: grid;
         grid-template-columns:490px 190px 190px 140px 1fr;
-        margin-bottom: 100px; 
+        text-transform: uppercase;
+        max-width: 1065px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
         .header__menu {
             font-size: 14px;
             font-family: "Playfair Display";
-            text-transform: uppercase;
+            padding-top: 10px;           
         }
         .header__logo {
             margin-bottom: 75px;
@@ -23,88 +27,107 @@ body {
             letter-spacing: 6px;
             font-family: "Inconsolata";
         }
-        .header__link1,.header__link2, .header__link3, .header__link4 {
-            padding-top: 10px;
-        }
-        .header__Image {
-        }
 .main {
-    max-width: 892px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0px 15px;
 }
-        .main__container1 {
+    .main__banner {
+            text-align: center;
+            margin-bottom: 100px;           
+    }
+        .main__banner img {
+            width: 100%;
+            max-width: 1065px;
+            min-width: 320px;
         }
-            .main__container1__title {
+    .main__container1 {            
+            max-width: 892px;
+            margin-left: auto;
+            margin-right: auto;
+    }
+        .main__container1__title {
                 margin-bottom: 25px;
-            }
-            .main__title {
+        }
+        .main__title {
                 font-size: 14px;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 color: rgb(180, 173, 158);
                 text-transform: uppercase;
                 font-weight: 400;
-            }
-            .main__container1__subtitle {
+        }
+        .main__container1__subtitle {
                 margin-bottom: 35px; 
-            }
-            .main__subtitle {
+        }
+        .main__subtitle {
                 font-size: 30px;
                 font-family: "Playfair Display";
                 color: rgb(98, 98, 98);
                 font-weight: 400;
-            }
-            .main__container1__text {
+        }
+        .main__container1__text {
                 margin-bottom: 48px;               
-            }
-            .main__text {
+        }
+        .main__text {
                 font-size: 14px;
                 font-family: "Playfair Display";
                 color: rgb(98, 98, 98);
                 line-height: 1.714;
-            }
+        }
             
-        .main__container2 {
+    .main__container2 {
+            max-width: 892px;
             margin-top: 135px;
             margin-bottom: 135px;
             display: grid;
-            grid-template-areas: "main__block1 main__block2"
-                                 "main__block3 main__block4";   
+            grid-auto-flow: dense;
+            grid-template-areas:"main__block1 main__block2"
+                                "main__block3 main__block4";   
             grid-column-gap: 52px;
-            grid-row-gap: 132px;     
+            grid-row-gap: 132px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width:900px) {
+            .main__container2 {
+                    grid-template-areas:"main__block1"
+                                        "main__block2"
+                                        "main__block3"
+                                        "main__block4";
+                    text-align: center;
+                }
             }
-            .main__image:hover {
+
+
+        .main__image:hover {
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25);
-            }
-            .main__block1 {  
-            }                      
-            .main__block2 {
-            }
-            .main__block3 {
-            }
-            .main__block4 {                
-            }
-                .main__block__image {
+        }
+        .main__block1 { 
+        }                      
+        .main__block2 {
+        }
+        .main__block3 {
+        }
+        .main__block4 {                
+        }
+        .main__block__image {
                     margin-bottom: 30px;  
                                       
-                }            
-                .main__block__title {
+        }            
+        .main__block__title {
                     margin-bottom: 30px;
-                }            
-                .main__block__subtitle {
+        }            
+        .main__block__subtitle {
                     margin-bottom: 35px;
-                }            
-                .main__block__text {
-                }  
+        }            
+        .main__block__text {
+        }  
+  
+        
 
 
 /*
 
 
-
-.middle__column1 {
-    padding-right: 60px;
-}
 
 .form {
     margin-top: 120px;
