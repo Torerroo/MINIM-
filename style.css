@@ -7,30 +7,63 @@ body {
 
 }
     .header__container {
-        display: grid;
-        grid-template-columns:490px 190px 190px 140px 1fr;
+        display: flex;
+        justify-content: space-between;
         text-transform: uppercase;
         max-width: 1065px;
         min-width: 320px;
         margin-left: auto;
         margin-right: auto;
+        align-items: center;
+        margin-bottom: 70px;
         
     }
         .header__menu {
             font-size: 14px;
-            font-family: "Playfair Display";
-            padding-top: 10px;           
+            font-family: "Playfair Display";  
+            list-style-type: none;
+            padding: 0; 
         }
         .header__logo {
-            margin-bottom: 75px;
             font-size: 30px;
             letter-spacing: 6px;
             font-family: "Inconsolata";
+            margin-right: 200px;
+        }
+        .menu__item {
+            display: inline;
+        }
+        @media (max-width:655px) {
+            .menu__item {
+                display: block;
+            }
+        }
+        
+        .menu__item:not(:last-child){
+            margin: 0px 105px 0px 0px;
+        }
+        @media (max-width:955px) {
+            .menu__item:not(:last-child){
+                margin: 0px 50px 0px 0px;
+            }
+            .header__container {
+                margin-bottom: 0px;
+            }
+        }
+        @media (max-width:790px) {
+            .menu__item {
+                display: block;
+                font-size: 18px;
+            }
+        }
+        .menu__link {
+            line-height: 2;
         }
 .main {
-    padding: 0px 15px;
+    
 }
     .main__banner {
+            padding: 0px 15px;
             text-align: center;
             margin-bottom: 100px;           
     }
@@ -39,7 +72,8 @@ body {
             max-width: 1065px;
             min-width: 320px;
         }
-    .main__container1 {            
+    .main__container1 {  
+            padding: 0px 15px;          
             max-width: 892px;
             margin-left: auto;
             margin-right: auto;
@@ -74,6 +108,7 @@ body {
         }
             
     .main__container2 {
+            padding: 0px 15px;
             max-width: 892px;
             margin-top: 135px;
             margin-bottom: 135px;
@@ -96,73 +131,53 @@ body {
                     text-align: center;
                 }
             }
-
-
         .main__image:hover {
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25);
         }
-        .main__block1 { 
-        }                      
-        .main__block2 {
-        }
-        .main__block3 {
-        }
-        .main__block4 {                
-        }
         .main__block__image {
-                    margin-bottom: 30px;  
-                                      
+                margin-bottom: 30px;                            
         }            
         .main__block__title {
-                    margin-bottom: 30px;
+                margin-bottom: 30px;
         }            
         .main__block__subtitle {
-                    margin-bottom: 35px;
+                margin-bottom: 35px;
         }            
-        .main__block__text {
-        }  
-  
-        
-
-
-/*
-
-
-
-.form {
-    margin-top: 120px;
-    border: 100px solid rgb(240, 240, 240);
-    font-family: "Playfair Display";
-}
-    .form__title {
-        text-align: center;
-        margin: 0;
-        background-color: rgb(240, 240, 240);
-        font-weight: 400;
-        padding-bottom: 42px;
-    }
-    .form__line {
-        background-color: rgb(240, 240, 240);
-        text-align: center; 
-    }
-    .form__input {
-        border: none;
-        border-bottom: 1px solid black;
-        background-color: rgb(240, 240, 240);
-        max-width: 400px;
-        text-align: left;
-        padding-top: 41px;
+    .form {
+        border: 100px solid rgb(240, 240, 240);
         font-family: "Playfair Display";
-        outline: 0;
-        padding-bottom: 10px;
+        margin: 0;
     }
-    .form__button {
-        position: relative;
-        font-size: 35px;
-        border: none;
-        top: -45px;
-        left: 190px;
-    }
+        .form__title {
+            text-align: center;
+            margin: 0;
+            background-color: rgb(240, 240, 240);
+            font-weight: 400;
+            padding-bottom: 42px;
+        }
+        .form__line {
+            background-color: rgb(240, 240, 240);
+            text-align: center; 
+        }
+        .form__input {
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(240, 240, 240);
+            max-width: 400px;
+            text-align: left;
+            padding-top: 41px;
+            font-family: "Playfair Display";
+            outline: 0;
+            padding-bottom: 10px;
+        }
+        .form__button {
+            position: relative;
+            font-size: 35px;
+            border: none;
+            top: -45px;
+            left: 190px;
+        }
+ /*
 .footer {
     margin: 103px 0 165px 0;
     
