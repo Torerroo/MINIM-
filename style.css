@@ -110,12 +110,10 @@ body {
     .main__container2 {
             padding: 0px 15px;
             max-width: 892px;
-            margin-top: 135px;
-            margin-bottom: 135px;
+            margin: 135px 0px;
             display: grid;
-            grid-auto-flow: dense;
-            grid-template-areas:"main__block1 main__block2"
-                                "main__block3 main__block4";   
+            grid-template-areas:"main__block main__block"
+                                "main__block main__block";   
             grid-column-gap: 52px;
             grid-row-gap: 132px;
             margin-left: auto;
@@ -124,11 +122,12 @@ body {
 
         @media (max-width:900px) {
             .main__container2 {
-                    grid-template-areas:"main__block1"
-                                        "main__block2"
-                                        "main__block3"
-                                        "main__block4";
+                    grid-template-areas:"main__block"
+                                        "main__block"
+                                        "main__block"
+                                        "main__block";
                     text-align: center;
+                    grid-row-gap: 80px
                 }
             }
         .main__image:hover {
@@ -136,75 +135,124 @@ body {
         }
         .main__block__image {
                 margin-bottom: 30px;                            
-        }            
+        } 
         .main__block__title {
                 margin-bottom: 30px;
         }            
         .main__block__subtitle {
                 margin-bottom: 35px;
-        }            
-    .form {
-        border: 100px solid rgb(240, 240, 240);
+        }  
+                  
+    .main .main__container3 {
         font-family: "Playfair Display";
-        margin: 0;
+        padding: 5px;
+        background-color: rgb(240, 240, 240);
+        max-width: auto;
+        border: 73px  solid rgb(240, 240, 240);
     }
-        .form__title {
-            text-align: center;
-            margin: 0;
-            background-color: rgb(240, 240, 240);
-            font-weight: 400;
-            padding-bottom: 42px;
+
+    @media (max-width:555px) {
+        .main .main__container3 {
+            border: 15px  solid rgb(240, 240, 240);
+            padding: 15px;
+            
         }
-        .form__line {
-            background-color: rgb(240, 240, 240);
-            text-align: center; 
+    }
+        .container3__content {
+            background-color: rgb(240, 240, 240); ;           
+
         }
-        .form__input {
-            border: none;
+        .content__form {
+            display: flex;
+            flex-direction: column;
+            max-width: 380px;
+            max-height: 140px;
+            margin: 0px auto;            
+        }
+
+        .content__form::after{
+            content: '';
             border-bottom: 1px solid black;
-            background-color: rgb(240, 240, 240);
+            width: 100%;
+           
+        }
+        .content__form-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+           
+        }
+        .content__form-input {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
             max-width: 400px;
-            text-align: left;
-            padding-top: 41px;
-            font-family: "Playfair Display";
-            outline: 0;
-            padding-bottom: 10px;
+            max-height: 140px;
         }
-        .form__button {
-            position: relative;
-            font-size: 35px;
-            border: none;
-            top: -45px;
-            left: 190px;
+            .form__input {
+                border: none;
+                background-color: rgb(240, 240, 240);
+                font-size: 14px;
+                
+            }
+            .form__input:active, :hover, :focus {
+                outline: 0;
+            }
+            .form__button {
+                border: none;
+                font-size: 24px;
+            }  
+            .form__button:hover {
+                cursor: pointer;
+                
+            }
+
+        .main__container4 {
+            padding: 0px 15px;
+            max-width: 892px;
+            margin: 135px 0px;
+            display: grid;
+            grid-template-areas:"main__block main__block";
+            grid-column-gap: 52px;
+            margin-left: auto;
+            margin-right: auto;
         }
- /*
-.footer {
-    margin: 103px 0 165px 0;
+        @media (max-width:900px) {
+            .main__container4 {
+                grid-template-areas:"main__block"
+                                    "main__block";
+                text-align: center;
+                grid-row-gap: 80px
+            }
+        }
+
+        .main__container5 {
+            margin: 0 auto 150px auto;
+            text-align: center;
     
-}
-    .footer__column1 {
-        padding: 0;
-        padding-right: 60px;      
-    }
-    .footer__column2 {
-        padding: 0;
-    }
-.footer__button {
-    text-align: center;
+            
         }
-    .button {
-        font-size: 20px;
-        font-family: "Playfair Display";
-        padding: 25px 35px 25px 35px;
-        border-color: rgb(179, 175, 175);
-        color: rgb(98, 98, 98);
-        background-color: white;
-        margin-bottom: 1370px;
-        border: 1px solid rgb(98, 98, 98);      
-    }
-    button:hover {
-        cursor: pointer;
-    }
+        .footer__button {
+            
+        }
+        .button {
+            font-size: 20px;
+            font-family: "Playfair Display";
+            border:1px solid rgb(98, 98, 98);
+            color: rgb(98, 98, 98);
+            background-color: white;
+            padding: 20px 35px;
+        }
+        .button:hover {
+            cursor: pointer;
+            box-shadow: 0 7px 28px rgba(0,0,0,0.25);
+        }
+           
+
+        
+
+
+    /*
 .bottom {
     border: 50px solid rgb(240, 240, 240);
     display: grid;
