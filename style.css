@@ -4,7 +4,6 @@ body {
 .header {
     margin-top: 70px;
     padding: 0px 15px;
-
 }
     .header__container {
         display: flex;
@@ -15,8 +14,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-        margin-bottom: 70px;
-        
+        margin-bottom: 70px;  
     }
         .header__menu {
             font-size: 14px;
@@ -33,12 +31,14 @@ body {
         .menu__item {
             display: inline;
         }
+        .menu__item:hover {
+            text-decoration: underline;
+        }
         @media (max-width:655px) {
             .menu__item {
                 display: block;
             }
         }
-        
         .menu__item:not(:last-child){
             margin: 0px 105px 0px 0px;
         }
@@ -59,9 +59,6 @@ body {
         .menu__link {
             line-height: 2;
         }
-.main {
-    
-}
     .main__banner {
             padding: 0px 15px;
             text-align: center;
@@ -105,8 +102,7 @@ body {
                 font-family: "Playfair Display";
                 color: rgb(98, 98, 98);
                 line-height: 1.714;
-        }
-            
+        } 
     .main__container2 {
             padding: 0px 15px;
             max-width: 892px;
@@ -141,8 +137,7 @@ body {
         }            
         .main__block__subtitle {
                 margin-bottom: 35px;
-        }  
-                  
+        }         
     .main .main__container3 {
         font-family: "Playfair Display";
         padding: 5px;
@@ -150,17 +145,14 @@ body {
         max-width: auto;
         border: 73px  solid rgb(240, 240, 240);
     }
-
     @media (max-width:555px) {
         .main .main__container3 {
             border: 15px  solid rgb(240, 240, 240);
-            padding: 15px;
-            
+            padding: 15px; 
         }
     }
         .container3__content {
             background-color: rgb(240, 240, 240); ;           
-
         }
         .content__form {
             display: flex;
@@ -169,18 +161,15 @@ body {
             max-height: 140px;
             margin: 0px auto;            
         }
-
         .content__form::after{
             content: '';
             border-bottom: 1px solid black;
             width: 100%;
-           
         }
         .content__form-title {
             font-size: 30px;
             margin-bottom: 20px;
             text-align: center;
-           
         }
         .content__form-input {
             margin-top: 20px;
@@ -192,8 +181,7 @@ body {
             .form__input {
                 border: none;
                 background-color: rgb(240, 240, 240);
-                font-size: 14px;
-                
+                font-size: 14px;   
             }
             .form__input:active, :hover, :focus {
                 outline: 0;
@@ -203,10 +191,8 @@ body {
                 font-size: 24px;
             }  
             .form__button:hover {
-                cursor: pointer;
-                
+                cursor: pointer; 
             }
-
         .main__container4 {
             padding: 0px 15px;
             max-width: 892px;
@@ -225,15 +211,9 @@ body {
                 grid-row-gap: 80px
             }
         }
-
         .main__container5 {
             margin: 0 auto 150px auto;
-            text-align: center;
-    
-            
-        }
-        .footer__button {
-            
+            text-align: center;  
         }
         .button {
             font-size: 20px;
@@ -247,32 +227,37 @@ body {
             cursor: pointer;
             box-shadow: 0 7px 28px rgba(0,0,0,0.25);
         }
-           
+        .footer {
+            border:50px solid rgb(240, 240, 240);
+            font-family: "Playfair Display";
+        }
+            .footer__items {
+                display: flex;
+                justify-content: center;
+                background-color: rgb(240, 240, 240);
+            }
+            @media (min-width:950px) {
+                .footer__items {
+                    display: grid;
+                    grid-template-columns: 24% 58% 18%;
+                    background-color: rgb(240, 240, 240);
+                }
+            }
+                .footer__item1 {
+                    text-align: right;
+                    padding-right: 20px;
+                } 
+                .footer__item2 {
+                    padding-right: 20px;
+                }     
+                    .footer__social {
+                        display: flex;
+                    }
+                    .footer__social > * {
+                        padding: 0 15px;
+                    }
+                        .social__item1 {
+                            padding: 0 20px 0 25px;
+                        }
+                       
 
-        
-
-
-    /*
-.bottom {
-    border: 50px solid rgb(240, 240, 240);
-    display: grid;
-    grid-template-areas: "block1 block2 block3 block4 block5 block6";
-    background-color:rgb(240, 240, 240);
-    grid-template-columns: 500px 1200px;
-    font-family: "Playfair Display";
-}
-    .bottom__block1 {
-        text-align: right;
-        padding-right: 20px;
-    }
-    .bottom__block3 {
-        text-align: right;
-    }
-    .bottom__block4 {
-        text-align: right;
-    }
-    .bottom__block5 {
-        text-align: center;      
-    }
-
-      
